@@ -106,24 +106,74 @@ document.addEventListener("DOMContentLoaded", function() {
             margin: 0;
         }
     </style>
-
-    <div class="container"></div>
-        <h1>Choose Your Option</h1>
-        <p>But I must explain to you how all this mistaken idea of denouncing.</p>
-        <div class="options">
-            <div class="option freelancer">
-                <h2>FREELANCER</h2>
-                <h1>Initially <br> designed to</h1>
-                <p>But must explain to you how all this <br> mistaken idea of denouncing</p>
-                <button>START HERE</button>
-            </div>
-            <div class="option studio">
-                <h2>STUDIO</h2>
-                <h1>Initially <br> designed to</h1>
-                <p>But must explain to you how all this <br>mistaken idea of denouncing</p>
-                <button>START HERE</button>
-            </div>
-        </div>
-    </div>
     `;
+
+    // Создание контейнера
+const container = document.createElement('div');
+container.className = 'container';
+
+// Создание заголовка
+const mainTitle = document.createElement('h1');
+mainTitle.textContent = 'Choose Your Option';
+container.append(mainTitle);
+
+// Создание параграфа
+const paragraph = document.createElement('p');
+paragraph.textContent = 'But I must explain to you how all this mistaken idea of denouncing.';
+container.append(paragraph);
+
+// Создание блока с опциями
+const options = document.createElement('div');
+options.className = 'options';
+container.append(options);
+
+// Создание опции Freelancer
+const freelancerOption = document.createElement('div');
+freelancerOption.className = 'option freelancer';
+
+const freelancerTitle = document.createElement('h2');
+freelancerTitle.textContent = 'FREELANCER';
+freelancerOption.append(freelancerTitle);
+
+const freelancerSubtitle = document.createElement('h1');
+freelancerSubtitle.innerHTML = 'Initially <br> designed to';
+freelancerOption.append(freelancerSubtitle);
+
+const freelancerParagraph = document.createElement('p');
+freelancerParagraph.innerHTML = 'But must explain to you how all this <br> mistaken idea of denouncing';
+freelancerOption.append(freelancerParagraph);
+
+const freelancerButton = document.createElement('button');
+freelancerButton.textContent = 'START HERE';
+freelancerOption.append(freelancerButton);
+
+options.append(freelancerOption);
+
+// Создание опции Studio
+const studioOption = document.createElement('div');
+studioOption.className = 'option studio';
+
+const studioTitle = document.createElement('h2');
+studioTitle.textContent = 'STUDIO';
+studioOption.append(studioTitle);
+
+const studioSubtitle = document.createElement('h1');
+studioSubtitle.innerHTML = 'Initially <br> designed to';
+studioOption.append(studioSubtitle);
+
+const studioParagraph = document.createElement('p');
+studioParagraph.innerHTML = 'But must explain to you how all this <br> mistaken idea of denouncing';
+studioOption.append(studioParagraph);
+
+const studioButton = document.createElement('button');
+studioButton.textContent = 'START HERE';
+studioOption.append(studioButton);
+
+options.append(studioOption);
+
+// Добавление контейнера в body
+document.body.append(container);
+
+
 });
+
