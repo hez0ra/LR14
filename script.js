@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
         .container {
             text-align: center;
         }
-        p{
+        .container p{
             font-family: "Open Sans", sans-serif;
             font-size: 14px;
             color: #9FA3A7;
@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function() {
             color: #FFC80A;
             margin-bottom: 20px;
         }
-        h1{
+        .container h1{
             font-family: "Arvo", serif;
             font-weight: 400;
             font-size: 36px;
@@ -173,7 +173,5 @@ options.append(studioOption);
 
 // Добавление контейнера в body
 document.body.append(container);
-
-
 });
 
